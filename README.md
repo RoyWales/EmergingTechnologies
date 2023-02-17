@@ -2,6 +2,8 @@
 
 Welcome to our Emerging Tech Course Project
 
+The File VR Room contains our unity project and the Wizard of OZ demo
+
 Team Members:
 
 Roy Wales 100746617, Programmer, Designer - Leader for the second and third term 
