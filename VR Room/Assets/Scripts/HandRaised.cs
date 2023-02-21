@@ -5,19 +5,25 @@ using UnityEngine;
 public class HandRaised : MonoBehaviour
 {
     public GameObject msgUI;
+    public bool Handtoggle = false;
+    public Manager Man;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Hand")
+        if (other.tag == "Hand" )
         {
-            msgUI.SetActive(true);
+            Handtoggle = !Handtoggle;
+            Man.handRaised = Handtoggle; // setting hand rasied to true
+            msgUI.SetActive(Handtoggle);
         }
     }
-    private void OnTriggerExit(Collider other)
+
+    public void Update()
     {
-        if (other.tag == "Hand")
+        if(Man.acceptedHandRaised == true)
         {
             msgUI.SetActive(false);
+            Man.acceptedHandRaised = false;
         }
     }
 }

@@ -6,20 +6,17 @@ public class headTilt : MonoBehaviour
 {
     public GameObject msgUI;
 
+    public Manager man;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "MainCamera")
         {
             msgUI.SetActive(true);
+            man.QuestionAnswered();
         }
     }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "MainCamera")
-        {
-            msgUI.SetActive(false);
-        }
-    }
+   
 }
 
 
