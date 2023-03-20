@@ -5,6 +5,10 @@ using UnityEngine;
 public class Manager : MonoBehaviour
 {
     public HandRaised HR;
+    
+
+    public Input Input;
+    public bool buttonHeld = false;
 
     public GameObject noMsg;
     public GameObject yesMsg;
@@ -26,7 +30,7 @@ public class Manager : MonoBehaviour
         questionAsked = true;
 
         questionMsg.SetActive(true);
-        respondBoxes.SetActive(true);
+        //respondBoxes.SetActive(true);
     }
 
     public void QuestionAnswered()
@@ -34,7 +38,8 @@ public class Manager : MonoBehaviour
         questionAsked = false;
 
         questionMsg.SetActive(false);
-        respondBoxes.SetActive(false);
+        //respondBoxes.SetActive(false);
+
     }
 
     public void AcceptHandRaise()
@@ -58,6 +63,7 @@ public class Manager : MonoBehaviour
         yesMsg.SetActive(false);
         handMsg.SetActive(false);
         handAcceptedMsg.SetActive(false);
+        questionMsg.SetActive(false);
 
         handRaiseHitbox.SetActive(true);
         handRaiseGlow.SetActive(false);
@@ -68,6 +74,9 @@ public class Manager : MonoBehaviour
         handRaised = false;
     }
 
-
+    public void Update()
+    {
+       
+    }
 
 }
