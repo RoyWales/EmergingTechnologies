@@ -2,7 +2,7 @@
 
 Welcome to our Emerging Tech Course Project
 
-The File VR Room contains our unity project and the Wizard of OZ demo
+The File VR Room contains our unity project and the Build and Package folder contains the Full demo.
 
 Team Members:
 
