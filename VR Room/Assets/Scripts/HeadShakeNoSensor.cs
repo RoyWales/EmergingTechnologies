@@ -16,7 +16,7 @@ public class HeadShakeNoSensor : MonoBehaviour
 	public ButtonPress but;
 	public GameObject NoObject;
 	// how many left-rights until we say "you said no"
-	const float ShakeCountRequired = 6;
+	const float ShakeCountRequired = 4;
 
 	// how much left/right constitutes half of a shape
 	const float ShakeAngularRequirement = 3;

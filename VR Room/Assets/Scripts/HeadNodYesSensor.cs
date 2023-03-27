@@ -18,7 +18,7 @@ public class HeadNodYesSensor : MonoBehaviour
 	public GameObject YesObject;
 
 	// how many up-downs until we say "you nodded"
-	const float NodCountRequired = 6;
+	const float NodCountRequired = 4;
 
 	// how much up/down constitutes half of a nod
 	const float NodAngularRequirement = 3;
